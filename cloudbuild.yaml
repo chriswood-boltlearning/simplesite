@@ -6,3 +6,7 @@ steps:
       - |
         gcloud --project=sponge-recruit-gavin container clusters get-credentials cluster-1 --zone europe-west2-a
         kubectl get pods -A
+        kubectl create namespace testcw
+        kubectl get ns
+        kubectl delete namespace testcw
+        kubectl get ns
